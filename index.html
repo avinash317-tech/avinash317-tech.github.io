@@ -7,6 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -39,13 +43,33 @@
 	<link rel="icon" type="image/png" href="favicon.png">
 	
 	<style>
+		body {
+			font: 20px Montserrat, sans-serif;
+			line-height: 1.8;
+			color: #f5f6f7;
+		  }
+		  .container-fluid {
+			padding-top: 10px;
+			padding-bottom: 40px;
+		  }
+		.bg-1 { 
+			background-color: #002244; /* dark blue*/
+			color: #ffffff;
+		  }
+		  .img-circle {
+			  border-radius: 100%;
+			  border: 10px solid red;
+			  padding: 20px;
+			  margin-bottom: 20px;
+			//padding-bottom: 15px //if you don't want padding.
+			}
 		.navbar {
 		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-bottom: 10px;
 		border: 0;
 		border-radius: 0;
 		margin-bottom: 0;
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: bold;
 		letter-spacing: 0px;
 	  }
@@ -61,158 +85,112 @@
 	<!-- header -->
 	
   <!-- ================================================== -->
-	  <nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
+	  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: #002244;">
 	   <div class="container-fluid">
-			<a class="navbar-brand text-white" style="font-size: 20px; font-weight: bold" href="#"><img src="logo.png"  style="width:50px;" class="rounded-pill">Avinash Kumar</a>
+			<a class="navbar-brand text-white" style="font-size: 20px; font-weight: bold" href="#"><img src="images/avinash.jpg"  style="width:50px;" class="rounded-pill">Avinash Kumar</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			  <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-				  <a class="nav-link text-white" href="#">Link</a>
+				  <a class="nav-link text-white" href="#">HOME</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link text-white" href="#">Link</a>
+				  <a class="nav-link text-white" href="#about">EXPERIENCE</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link text-white" href="#">Link</a>
-				</li>    
+				  <a class="nav-link text-white" href="#education">EDUCATION</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white" href="#certificate">ACHIEVEMENTS</a>
+				</li> 
+				<li class="nav-item">
+				  <a class="nav-link text-white" href="#contact">CONTACT</a>
+				</li> 				
 			  </ul>
 			</div>
 		  </div>
 	</nav>
 	
-   <!-- Navbar 
-	<nav class="navbar navbar-default">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		  </button>
-		  <a class="navbar-brand" href="#"><img src="logo.png"  style="width:40px;" class="rounded-pill">Avinash Kumar</a>
-		</div>
-		<div class="collapse navbar-collapse" id="navbar">
-		  <ul class="nav navbar-nav navbar-right">
-			<li class="current"><a class="smoothscroll"  href="#intro" title=""> Home</a></li>
-			<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-			<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-			<li><a class="smoothscroll"  href="#portfolio" title="">Projects</a></li>
-			<li><a class="smoothscroll"  href="#certificate" title="">Certificates</a></li>		
-			<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>-->
-	
 
 	<!-- intro section
    ================================================== -->
    <!-- First Container -->
-	<div class="container-fluid bg-1 text-center content">
-	  <h3 class="margin">Who Am I?</h3>
-	  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-	  <h3>I'm an adventurer</h3>
+   
+	<div class="container-fluid bg-1 text-center">
+	  <h1 class="margin text-white">Hey, I'm Avinash</h1>
+	  <img src="images/avinash.jpg" class="img-responsive img-circle margin" style="display:inline" alt="avinash" width="250" height="100">
+	  <h2 class="margin" style="color:#FFA500">I'm a Java Software Developer with 3+ experience in JAVA, SPRING BOOT, AWS, ORACLE, GIT. </h2>
+	  <button type="button" class="btn btn-secondary" style="width:200px">Hire Me</button>
+	  <button type="button" class="btn btn-secondary" style="width:200px">Download CV</button>
 	</div>
 
    <!-- about section
    ================================================== -->
    <section id="about">
+		<div class="row section-intro">
+			<h2>Summary</h2>
 
-   	<div class="row section-intro">
-   			<h5>About</h5>
-   			<h2>Let me introduce myself.</h2>
+			<div class="intro-info">
+				<p class="lead">"Lad with a <font color="#FF0077">million</font> dreams."</p>
+			</div>   			
 
-   			<div class="intro-info">
+				   		
+			<!-- /section-intro -->
 
-   				<img src="images/profile-pic.jpg" alt="Priyanshu Rai Picture">
+			<div class="row about-content">
 
-   				<p class="lead">"Lad with a <font color="#FF0077">million</font> dreams."</p>
-   			</div>   			
+				<div class="col-six tab-full">
 
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-
-   		<div class="col-six tab-full">
-
-   			<h3>Profile</h3>
-                <p>Hardworking individual searching ways for self-improvement and ready to take up challenges to test my skills and improve them further. Experienced Full Stack Developer with a demonstrated history of working in software development industry. Skilled in Java, Spring MVC, JavaScript, JavaServer Pages (JSP), MySQL and Microservices and a strong professional with a Master of Technology (MTech) from Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal.</p>
-
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong>
-   					<span>Priyanshu Rai</span>
-   				</li>
-   				<li>
-   					<strong>Birth Date:</strong>
-   					<span>August 9th, 1994</span>
-   				</li>
-   				<li>
-   					<strong>Website:</strong>
-   					<span><a href="#">https://priyanshurai27.github.io/</a></span>
-   				</li>
-                    <li>
-                        <strong>Email:</strong>
-                        <span>priyanshu.rai27@gmail.com</span>
-                    </li>
-
-   			</ul> <!-- /info-list -->
-
-   		</div>
-
-   		<div class="col-six tab-full">
-
-   			<h3>Skills</h3>
-                <p>
-                    <strong>Languages:</strong><br />
-                    <b>English :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    <b>Hindi :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    	
-                </p>
+					<h3>Skills</h3>
+						<p>
+							<strong>Languages:</strong><br />
+							<b>English :</b><br /> Read, Write, Speak : <i>Native</i><br />
+							<b>Hindi :</b><br /> Read, Write, Speak : <i>Native</i><br />
+								
+						</p>
 
 
-                <ul class="skill-bars">
-                    <li>
-                        <!-- <div class="progress percent80"><span>80%</span></div> -->
-                        <strong>Java</strong>
-                    </li>
-                    <li>
-                        <!-- <div class="progress percent70"><span>70%</span></div> -->
-                        <strong>Python</strong>
-                    </li>
-					<li>
-                       <!-- <div class="progress percent70"><span>70%</span></div> -->
-                        <strong>JavaScript</strong>
-                    </li>
-                    <li>
-                        <!-- <div class="progress percent75"><span>75%</span></div> -->
-                        <strong>Spring Boot</strong>
-                    </li>
-                    <li>
-                        <!-- <div class="progress percent70"><span>70%</span></div> -->
-                        <strong>PL/SQL</strong>
-                    </li>	
-					
+						<ul class="skill-bars">
+							<li>
+								<!-- <div class="progress percent80"><span>80%</span></div> -->
+								<strong>Java</strong>
+							</li>
+							<li>
+								<!-- <div class="progress percent70"><span>70%</span></div> -->
+								<strong>Python</strong>
+							</li>
+							<li>
+							   <!-- <div class="progress percent70"><span>70%</span></div> -->
+								<strong>JavaScript</strong>
+							</li>
+							<li>
+								<!-- <div class="progress percent75"><span>75%</span></div> -->
+								<strong>Spring Boot</strong>
+							</li>
+							<li>
+								<!-- <div class="progress percent70"><span>70%</span></div> -->
+								<strong>PL/SQL</strong>
+							</li>	
+							
 
-                </ul> <!-- /skill-bars -->		
+						</ul> <!-- /skill-bars -->		
 
-   		</div>
+				</div>
 
-   	</div>
+			</div>
 
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="documents/PriyanshuRai_CV.pdf" title="Download CV" class="button button-primary">Download CV</a>   			
-   		</div>   		
-   	</div>
+			<div class="row button-section">
+				<div class="col-twelve">
+					<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+					<a href="documents/PriyanshuRai_CV.pdf" title="Download CV" class="button button-primary">Download CV</a>   			
+				</div>   		
+			</div>
+		</div>
 
-   </section> <!-- /process-->    
-
+	</section> <!-- /process-->    
+	
 
    <!-- resume Section
    ================================================== -->
@@ -646,7 +624,7 @@
    <div id="preloader"> 
     	<div id="loader"></div>
    </div> 
-
+</div> 
    <!-- Java Script
    ================================================== --> 
    <script src="js/jquery-2.1.3.min.js"></script>
