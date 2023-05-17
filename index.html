@@ -58,7 +58,7 @@
 		  }
 		  .img-circle {
 			  border-radius: 100%;
-			  border: 10px solid red;
+			  border: 10px solid dark blue;
 			  padding: 20px;
 			  margin-bottom: 20px;
 			//padding-bottom: 15px //if you don't want padding.
@@ -75,6 +75,10 @@
 	  }
 	  .navbar-nav  li a:hover {
 		color: #ff0000 !important;
+	  }
+	  
+	  p {
+	  color: #000000;
 	  }
 	  </style>
 	</head>
@@ -97,7 +101,10 @@
 				  <a class="nav-link text-white" href="#">HOME</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link text-white" href="#about">EXPERIENCE</a>
+				  <a class="nav-link text-white" href="#about">ABOUT</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white" href="#experience">EXPERIENCE</a>
 				</li>
 				<li class="nav-item">
 				  <a class="nav-link text-white" href="#education">EDUCATION</a>
@@ -122,81 +129,246 @@
 	  <h1 class="margin text-white">Hey, I'm Avinash</h1>
 	  <img src="images/avinash.jpg" class="img-responsive img-circle margin" style="display:inline" alt="avinash" width="250" height="100">
 	  <h2 class="margin" style="color:#FFA500">I'm a Java Software Developer with 3+ experience in JAVA, SPRING BOOT, AWS, ORACLE, GIT. </h2>
-	  <button type="button" class="btn btn-secondary" style="width:200px">Hire Me</button>
-	  <button type="button" class="btn btn-secondary" style="width:200px">Download CV</button>
+	  <div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button button-secondary">Hire Me</a>
+   			<a href="documents/AvinashKumar_CV.pdf" title="Download CV" class="button button-secondary">Download CV</a>   			
+   		</div>   		
+   	</div>
 	</div>
 
-   <!-- about section
+     <!-- about section
    ================================================== -->
    <section id="about">
+
+   	<div class="row section-intro">
+   			<h5>About</h5>
+   			<h2>Let me introduce myself.</h2>
+
+   			<div class="intro-info">
+
+   				<img src="images/avinash.jpg" alt="Avinash kumar Picture">
+
+   				<p class="lead">"Lad with a <font color="#FF0077">million</font> dreams."</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+                <p class="text-black">Hardworking individual searching ways for self-improvement and ready to take up challenges to test my skills and improve them further. Java Software Developer with 3+ years of experience in IT & computer software industry. Skilled in Object-Oriented Programming (OOP), JAVA, Spring Boot, Hibernate, Event-driven architecture, Couchbase, MySQL and AWS. Major interest in HTML, CSS, JavaScript. Strong engineering professional with a B.E focused in Computer Science & Engineering from IES College of Technology, Bhopal.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Avinash Kumar</span>
+   				</li>
+   				<li>
+   					<strong>Experience:</strong>
+   					<span>3+</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span><a href="https://avinash317-tech.github.io/">https://avinash317-tech.github.io/</a></span>
+   				</li>
+                <li>
+                    <strong>Email:</strong>
+                     <span>avinash.ies31@gmail.com</span>
+                </li>
+				<li>
+                    <strong>Mobile No. :</strong>
+                     <span>7725074289</span>
+                </li>
+				
+				<li>
+                    <strong>Country:</strong>
+                     <span>India</span>
+                </li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+                <p class="text-black">
+                    <strong>Languages:</strong><br />
+                    <b>English :</b><br /> Read, Write, Speak : <i>Native</i><br />
+                    <b>Hindi :</b><br /> Read, Write, Speak : <i>Native</i><br />
+                    	
+                </p>
+
+
+                <ul class="skill-bars">
+                    <li>
+                        <!-- <div class="progress percent80"><span>80%</span></div> -->
+                        <strong>Java</strong>
+                    </li>
+					<li>
+                        <!-- <div class="progress percent75"><span>75%</span></div> -->
+                        <strong>Spring Boot</strong>
+                    </li>
+                    <li>
+                        <!-- <div class="progress percent70"><span>70%</span></div> -->
+                        <strong>Micro-Services</strong>
+                    </li>
+					<li>
+                       <!-- <div class="progress percent70"><span>70%</span></div> -->
+                        <strong>Hibernate</strong>
+                    </li>
+                    
+                    <li>
+                        <!-- <div class="progress percent70"><span>70%</span></div> -->
+                        <strong>HTML || CSS || JavaScript || JSON</strong>
+                    </li>
+					<li>
+                        <!-- <div class="progress percent50"><span>50%</span></div> -->
+                        <strong>AWS</strong>
+                    </li>
+					
+					<li>
+                        <!-- <div class="progress percent70"><span>70%</span></div> -->
+                        <strong>MySQL</strong>
+                    </li>
+					
+
+                </ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+ <!--  	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="documents/PriyanshuRai_CV.pdf" title="Download CV" class="button button-primary">Download CV</a>   			
+   		</div>   		
+   	</div>-->
+
+   </section> <!-- /process-->    
+
+	 <!-- EXPERIENCE Section
+   ================================================== -->
+
+	<section id="experience" class="grey-section">
+
 		<div class="row section-intro">
-			<h2>Summary</h2>
+   		<div class="col-twelve experience-header">
 
-			<div class="intro-info">
-				<p class="lead">"Lad with a <font color="#FF0077">million</font> dreams."</p>
-			</div>   			
+            <h2>Experience & Internship</h2>
+   		</div>   		
+   	</div> <!-- /section-intro--> 
 
-				   		
-			<!-- /section-intro -->
+   	<div class="row experience-timeline">
 
-			<div class="row about-content">
+   		<div class="col-twelve experience-header">
 
-				<div class="col-six tab-full">
+   			<h2>Raksha Health Insurance TPA Pvt. Ltd.</h2>
 
-					<h3>Skills</h3>
-						<p>
-							<strong>Languages:</strong><br />
-							<b>English :</b><br /> Read, Write, Speak : <i>Native</i><br />
-							<b>Hindi :</b><br /> Read, Write, Speak : <i>Native</i><br />
-								
-						</p>
+   		</div> <!-- /experience-header -->
 
+   		<div class="col-twelve">
 
-						<ul class="skill-bars">
-							<li>
-								<!-- <div class="progress percent80"><span>80%</span></div> -->
-								<strong>Java</strong>
-							</li>
-							<li>
-								<!-- <div class="progress percent70"><span>70%</span></div> -->
-								<strong>Python</strong>
-							</li>
-							<li>
-							   <!-- <div class="progress percent70"><span>70%</span></div> -->
-								<strong>JavaScript</strong>
-							</li>
-							<li>
-								<!-- <div class="progress percent75"><span>75%</span></div> -->
-								<strong>Spring Boot</strong>
-							</li>
-							<li>
-								<!-- <div class="progress percent70"><span>70%</span></div> -->
-								<strong>PL/SQL</strong>
-							</li>	
-							
+   			<div class="timeline-wrap">
 
-						</ul> <!-- /skill-bars -->		
+	   			<div class="timeline-block">
 
-				</div>
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
 
+	   				<div class="timeline-header">
+	   					<p>Mar 2022 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Asst. Manager-IT</h4>
+	   					<p>➢ Working on API development and Enhancement of existing website and Portal using Java, Spring Boot , Oracle, JSP, HTML, CSS, JavaScript. <br/> 
+						➢ Working with an establish team of developer and interact with product manager and clients.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+				
 			</div>
+			
+			<div class="col-twelve experience-header">
 
-			<div class="row button-section">
-				<div class="col-twelve">
-					<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-					<a href="documents/PriyanshuRai_CV.pdf" title="Download CV" class="button button-primary">Download CV</a>   			
-				</div>   		
-			</div>
-		</div>
+				<h2>Global Groupware Solutions Limited</h2>
 
-	</section> <!-- /process-->    
+			</div> <!-- /experience-header -->
+			<br/><br/>
+            <div class="timeline-wrap">   
+				
+                <div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>Apr 2021- Mar 2022</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Sr. Software Developer</h4>
+	   					<p>➢ Worked on Event-Driven Architecture. Designing and developing features for the latest version of the HRMS product Employwise 2.0 using AWS, Java, Spring Boot and Couchbase. <br/>
+						➢ Worked on Integration for various clients using AWS and Java.</p>
+	   				</div>
+
+	   			</div>
+                
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>Oct 2020 - Mar 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Software Developer</h4>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+				
+				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>Feb 2020 - Sept 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Software Developer(Intern)</h4>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /experience-timeline -->
+		
+	</section> <!-- /features -->
 	
+	<!-- ===============================================-->
 
    <!-- resume Section
    ================================================== -->
-	<section id="resume" class="grey-section">
+	<section id="resume" class="white-section">
 
-		<div class="row section-intro">
+		<!--<div class="row section-intro">
    		<div class="col-twelve">
 
    			<h5>Resume</h5>
@@ -216,38 +388,22 @@
 
    			<div class="timeline-wrap">
 
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Postgraduate Degree</h3>
-	   					<p>June 2017 - September 2020</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4><a href="https://www.patelcollege.com/">Patel College of Science and Technology</a></h4>
-	   					<p>I have completed my post graduation from Patel College of Science and Technology, Bhopal under Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV) University.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
+	   			
                 
                 <div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
 	   					<h3>Bachelor's Degree</h3>
-	   					<p>August 2011 - June 2015</p>
+	   					<p>August 2016 - June 2020</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4><a href="https://www.mansarovargroup.com/">Mansarovar Institute of Science and Technology</a></h4>
-	   					<p>Done my bachelor's degree from Mansarovar Institute of Science and Technology, Bhopal under Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV) University.</p>
+	   					<h4><a href="https://iesbpl.ac.in/IES.php">IES College of Technology</a></h4>
+	   					<p>Done my bachelor's degree from IES College of Technology, Bhopal under Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV) University.</p>
 	   				</div>
 
 	   			</div>
@@ -255,17 +411,35 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Schooling/HSC</h3>
-	   					<p>2011</p>
+	   					<h3>Higher Secondary School</h3>
+	   					<p>2016</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4><a href="https://www.dalimsssunbeam.com/">DALIMSS</a></h4>
-	   					<p>Completed my schooling through CBSE Board at DALIMSS, Sigra - Varanasi.</p>
+	   					<h4><a href="#">M.H.K. College</a></h4>
+	   					<p>Completed my Intermediate from M.H.K. College, Motihari under BSEB Board </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+				
+				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Schooling</h3>
+	   					<p>2014</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4><a href="http://msmemorialpublicschool.com/index.html">M.S. Memorial Public School</a></h4>
+	   					<p>Completed my schooling through CBSE Board at M.S. Memorial Public School, Motihari - Bihar </p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -278,8 +452,8 @@
 		
 	</section> <!-- /features -->
 
-	
-	<section id="portfolio">
+	<!--========================================================================== -->
+<!--	<section id="portfolio">
 
 		<div class="row section-intro">
    		<div class="col-twelve">
@@ -322,7 +496,20 @@
 	                     </div>                    
 	                  </a>
 	               </div>
-	        </div>		
+	        </div>	
+
+	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/calculator.jpg" alt="Calculator" >
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Calculator</h3>
+		     				</div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        </div>
 			
 			<div id="modal-01" class="popup-modal slider mfp-hide">	
 
@@ -333,10 +520,10 @@
 					   <div class="description-box">
 					      <h4>Weather Website</h4>		      
 					      <p>Weather Website made using Javascript, CSS and HTML.</p>
-					      <!-- <div class="categories">Weather Website</div>	-->		               
+					      <!-- <div class="categories">Weather Website</div>			               
 					   </div>
 			         <div class="link-box">
-			            <a href="weather.html">Visit</a>
+			            <a href="Weather/weather.html">Visit</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
                 </div>
@@ -350,10 +537,27 @@
 					   <div class="description-box">
 					      <h4>Portfolio Website</h4>		      
 					      <p>Portfolio Website made using Javascript, CSS and HTML.</p>
-					      <!-- <div class="categories">Weather Website</div>	-->		               
+					      <!-- <div class="categories">Weather Website</div>		               
 					   </div>
 			         <div class="link-box">
 			            <a href="https://priyanshurai27.github.io">Visit</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+                </div>
+				
+			<div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/backend/CalculatorFront.jpg" alt="Calculator" >
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Calculator</h4>		      
+					      <p>Calculator made using Javascript, CSS and HTML.</p>
+					      <!-- <div class="categories">Weather Website</div>		               
+					   </div>
+			         <div class="link-box">
+			            <a href="Calculator/calculator.html">Visit</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
                 </div>
@@ -362,58 +566,62 @@
 			</div>
 			</div>
 	</section>
-	
+-->	
 	<!-- Certificate -->
 	
 		<section id="certificate">
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+			<div class="row section-intro">
+				<div class="col-twelve">
 
-   			<h5>CERTIFICATE</h5>
-   			<h2>Check Out My Certificates.</h2>
+					<h5>ACHIEVEMENTS</h5>
 
-   		<!--	<p class="lead">These Projects have helped me develop my Skills and understand the Industry better.</p> -->
+					<!--	<p class="lead">These Projects have helped me develop my Skills and understand the Industry better.</p> -->
 
-   		</div>   		
-   	</div>
-	
-	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-   			
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-	
-	<div class="bgrid folio-item">				
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/Spring_Framework.jpg" alt="Spring Framework" >	                  
-	               </div>
-	        </div>
-	
-	<div class="bgrid folio-item">				
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/Python_Programming.jpg" alt="Python" >	                  
-	               </div>
-	        </div>
-			
-	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/Python_Data.jpg" alt="Python Data Structures" >	                  
-	               </div>
-	        </div>		
-			
-	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/python_Data_Science.jpg" alt="Python Data Science" >	               
-	               </div>
-	        </div>			
-		
-	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/Python_Access_Web.jpg" alt="Python Data Science" >	                  
-	               </div>
-	        
+				</div>   		
 			</div>
+	
+			<div class="row portfolio-content">
+
+				<div class="col-twelve">
+   			
+					<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+	
+						<div class="bgrid folio-item">				
+							<div class="item-wrap">
+								<img src="images/download.png" alt="Hacker Rank" >	                  
+							</div>
+						</div>
+	
+						<div class="bgrid folio-item">				
+							<div class="item-wrap">
+								<img src="images/cap.png" alt="cap 50" >	                  
+							 </div>
+						</div>
+			
+						<div class="bgrid folio-item">
+							<div class="item-wrap">
+								<img src="images/cap-2018.png" alt="cap 2018" >	                  
+							</div>
+						</div>		
+								
+						<div class="bgrid folio-item">
+							<div class="item-wrap">
+								<img src="images/techVCL.png" alt="Tech VCL" >	               
+							</div>
+						</div>	
+						<div class="bgrid folio-item">
+							<div class="item-wrap">
+								<img src="images/CB.png" alt="Couch Base" >	                  
+							</div>			
+							
+						<div class="bgrid folio-item">
+							<div class="item-wrap">
+								<img src="images/techwiz.png" alt="Tech Wiz" >	                  
+							</div>
+	
+					
+					</div>
 			</div>
 		</div>
 	</div>
@@ -504,41 +712,41 @@
 
    		<div class="col-twelve">
             
-<!-- form -->
-<form name="form" id="contactForm" method="POST" action="https://formspree.io/f/mayzdbpl">
-      			<fieldset>
-                    <div class="form-field">
- 				<input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                    </div>
-                    <div class="form-field">
-				<input name="_replyto" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	                </div>
-                    <div class="form-field">
-				<input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="">
-	                </div>                       
-                    <div class="form-field">
-	                 	<textarea name="message" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	                </div>                      
-                    <div class="form-field">
-                        <button class="submitform" name="submit">Submit</button>
-                        <div id="submit-loader">
-			    <div class="text-loader">Sending...</div>                             
-       				  <div class="s-loader">
-					<div class="bounce1"></div>
-					<div class="bounce2"></div>
-					<div class="bounce3"></div>
-				    </div>
-			</div>
-                    </div>
+		<!-- form -->
+		<form name="form" id="contactForm" method="POST" action="https://formspree.io/f/myyavobk">
+						<fieldset>
+							<div class="form-field">
+						<input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+							</div>
+							<div class="form-field">
+						<input name="_replyto" type="email" id="contactEmail" placeholder="Email" value="" required="">
+							</div>
+							<div class="form-field">
+						<input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="">
+							</div>                       
+							<div class="form-field">
+								<textarea name="message" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+							</div>                      
+							<div class="form-field">
+								<button class="submitform" name="submit">Submit</button>
+								<div id="submit-loader">
+						<div class="text-loader">Sending...</div>                             
+							  <div class="s-loader">
+							<div class="bounce1"></div>
+							<div class="bounce2"></div>
+							<div class="bounce3"></div>
+							</div>
+					</div>
+							</div>
 
-	</fieldset>
-</form>
+			</fieldset>
+		</form>
 
             <!-- contact-warning -->
-<div id="message-warning">            	
-            </div> 
-            <!-- contact-success -->
-<div id="message-success">
+		<div id="message-warning">            	
+					</div> 
+					<!-- contact-success -->
+		<div id="message-success">
                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
       		</div> 
 
@@ -556,14 +764,11 @@
 
    			<h5>Where to find me</h5>
 
-   			<p>
-            Greater Noida West, <br>
-            201306 India
-            </p>
+   			<p class="text-white">Delhi, <br>110016, India</p>
 
    		</div>
 
-   		<div class="col-four tab-full collapse">
+   		<div class="col-four tab-full">
 
    			<div class="icon">
    				<i class="icon-mail"></i>
@@ -571,7 +776,7 @@
 
    			<h5>Email Me At</h5>
 
-   			<p>priyanshu.rai27@gmail.com			     
+   			<p class="text-white">avinash.ies31@gmail.com			     
 			</p>
 
    		</div>
@@ -584,8 +789,7 @@
 
    			<h5>Call Me At</h5>
 
-			<p>Phone: Telegram (<a href="https://t.me/priyanshurai27">Priyanshu Rai</a>)
-			</p>
+			<p class="text-white">Phone: 7725074289</p>
    		</div>
    		
    	</div> <!-- /contact-info -->
@@ -595,14 +799,16 @@
    <!-- footer ================================================== -->
 
    <footer>
-     	<div class="row">
-
+     	<div style="max-width: 900px;">
+			
      		<div class="col-six tab-full pull-right social">
-
                 <ul class="footer-social">
-                    <li><a href="https://www.linkedin.com/in/priyanshurai27/"><i class="fa fa-linkedin"></i></a></li>
-		            <li><a href="https://www.instagram.com/priyanshu__rai/"><i class="fa fa-instagram"></i></a></li>
-		            <li><a href="https://github.com/priyanshurai27"><i class="fa fa-github"></i></a></li>                    
+					
+					<li><a href="mailto:avinash.ies31@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/avinash-kumar-3451a917a"><i class="fa fa-linkedin"></i></a></li>
+		            <li><a href="https://www.instagram.com/avinash_317/"><i class="fa fa-instagram"></i></a></li>
+		            <li><a href="https://github.com/avinash317-tech/"><i class="fa fa-github"></i></a></li> 
+					<li><a href="https://twitter.com/avinash_317/"><i class="fa fa-twitter"></i></a></li>
                 </ul> 
 	      		
 	      </div>
@@ -610,7 +816,7 @@
       	<div class="col-six tab-full">
 	      	<div class="copyright">
 		        	<span>© Copyright 2023 </span> 
-		        	<span>Design by <a href="https://www.linkedin.com/in/priyanshurai27/">Priyanshu Rai</a></span>	         	
+		        	<span>Design by <a href="https://www.linkedin.com/in/avinash-kumar-3451a917a">Avinash Kumar</a></span>	         	
 		         </div>		                  
 	      	</div>
 
@@ -624,7 +830,6 @@
    <div id="preloader"> 
     	<div id="loader"></div>
    </div> 
-</div> 
    <!-- Java Script
    ================================================== --> 
    <script src="js/jquery-2.1.3.min.js"></script>
